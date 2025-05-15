@@ -1,0 +1,44 @@
+{
+  "name": "xiao_lei",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "electron:build": "vue-cli-service electron:build",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vue/runtime-core": "^3.5.13",
+    "dayjs": "^1.11.13",
+    "electron-store": "^8.1.0",
+    "element-plus": "^2.9.10",
+    "live2d-widget-model-haruto": "^1.0.5",
+    "live2d-widget-model-hijiki": "^1.0.5",
+    "live2d-widget-model-koharu": "^1.0.5",
+    "live2d-widget-model-miku": "^1.0.5",
+    "live2d-widget-model-shizuku": "^1.0.5",
+    "oh-my-live2d": "^0.19.3",
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/electron-devtools-installer": "^2.2.2",
+    "@types/node": "^16.18.86",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "electron": "^25.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-devtools-installer": "^3.2.0",
+    "path-browserify": "^1.0.1",
+    "ts-loader": "^8.4.0",
+    "typescript": "~5.0.4",
+    "vue-cli-plugin-electron-builder": "~2.1.1"
+  }
+}
